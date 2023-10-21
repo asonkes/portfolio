@@ -1,0 +1,29 @@
+/******************  CREATION PORTFOLIO *****************************/
+Base de données = portfolio
+------------------------------------------------
+1ere table = users (table servant pour l'identification, car on va vouloir l'administrer et donc il y a une identification et un password)
+--> id (clé primaire et auto-implémentée)
+--> username ( varchar -- 255)
+--> password (varchar -- 255)
+------------------------------------------------
+2eme table = categories (pour stocker les catégories)
+--> id (clé primaire et auto-implémentée)
+--> name (nom de la catégorie) en (varchar -- 255)
+--> slug(permet de pouvoir identifier le nom de la catégorie) en (varchar -- 255)
+Ex: on aura pas cat=1?phph mais javascript
+------------------------------------------------
+3eme table = works (pour stocker les différentes réalisations)
+--> id (clé primaire et auto-implémentée)
+--> name (varchar -- 255)
+--> slug (permet de pouvoir identifier le nom du travail) en (varchar -- 255)
+--> content (LONGTEXT) --> explication de notre réalisation
+--> categorie-id (category_id) ça permet de pouvoir lier aux catégories, c'est la clé étrangère, on l'a met en INDEX
+------------------------------------------------
+
+/******************  CREATION PORTFOLIO *****************************/
+Pour la 1ere table de données(mettre dans password, dans la fonction (SHA1)).
+Cela pemret de cripter le password.
+Cette fonction ne permet pas de revenir en arrière.
+Depuis la version crypter, il sera iompossible de retrouver la version cryptée).
+Dopnc impossible de le pirater.
+

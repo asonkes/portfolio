@@ -1,0 +1,49 @@
+#work {
+    background-image: url("images/banniere-abstraite-conception-vagues-qui-coule-arc-ciel_1048-14398.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    .all-block-parent {
+        max-width: 100%;
+        min-height: calc(100vh - 176px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        // Width: 100% et pas max-width, car le wrapper !!!
+        .all-block-enfant {
+            .all-block {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-gap: 25px;
+                margin: 15px 0px 25px 0px;
+
+                @media(max-width: $size-dekstop-md-sml) {
+                    grid-template-columns: repeat(1, 1fr);
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+
+                .block {
+                    @media(max-width: $size-dekstop-md-sml) {
+                        width: 60%;
+                    }
+
+                    @media(max-width: $size-phone) {
+                        width: 70%;
+                    }
+
+                    a {
+                        text-decoration: none;
+
+                        img {
+                            border: 4px solid $font-color-mauve;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

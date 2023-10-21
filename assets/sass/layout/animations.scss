@@ -1,0 +1,35 @@
+/*** ANIMATIONS POUR WORK (effet pour les blocks) ***/
+[data-effect=fade-in-right].is-animate,
+[data-effect=fade-in-down].is-animate,
+[data-effect=fade-in-left].is-animate {
+    transform: translate3D(0, 0, 0);
+    opacity: 1;
+}
+
+[data-effect=fade-in-right],
+[data-effect=fade-in-down],
+[data-effect=fade-in-left] {
+    transition-timing-function: cubic-bezier(.20, 0.8, .745, 1);
+    transition-duration: 3s;
+    opacity: 0;
+}
+
+/*** FADE-IN-RIGHT ***/
+[data-effect=fade-in-right] {
+    transform: translate3D(-100px, 0, 0);
+}
+
+/*** FADE-IN-DOWN ***/
+[data-effect=fade-in-down] {
+    transform: translate3D(0, -100px, 0);
+}
+
+/*** FADE-IN-LEFT ***/
+[data-effect=fade-in-left] {
+    transform: translate3D(100px, 0, 0);
+}
+
+/****** ******/
+[data-effect=section] {
+    background-color: black;
+}

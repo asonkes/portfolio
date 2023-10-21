@@ -1,0 +1,15 @@
+/*** PARTIE FOOTER  ***/
+footer {
+    max-width: 100%;
+    height: 40px;
+    background-color: $font-color-mauve;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    #footer-text {
+        color: $font-color-white;
+        font-size: 20px;
+        font-family: $font-base;
+    }
+}

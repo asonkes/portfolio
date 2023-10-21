@@ -1,0 +1,73 @@
+/*** PARTIE WEB DESIGN PROJECT  ***/
+#webDesignProject {
+    max-width: 100%;
+    min-height: 100vh;
+    background-image: url("images/fond-ecran-colore-flou-artistique_58702-8631.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    .webDesignProject-all-block {
+        width: 100%;
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 55px;
+        padding-top: 15px;
+
+        .image-position {
+            width: 70%;
+            transition: all 0.8s ease-out;
+
+            @media(max-width: $size-tablette-lg-md) {
+                width: 80%;
+            }
+
+            img {
+                max-width: 100%;
+            }
+        }
+
+        .webDesignProject-text,
+        .webDesignProject-text2 {
+            text-align: center;
+            font-family: $font-text;
+        }
+
+
+        .webDesignProject-text {
+            color: rgb(83, 233, 246);
+            margin: 10px;
+            font-size: 30px;
+
+            @media(max-width: $size-dekstop-sml) {
+                font-size: 25px;
+            }
+
+            span {
+                text-decoration: underline;
+            }
+        }
+
+        .webDesignProject-text2 {
+            width: 70%;
+            color: rgb(255, 0, 255);
+            margin: 55px 15px 55px 15px;
+            font-size: 25px;
+            line-height: 1.25;
+
+            @media(max-width: $size-dekstop-md) {
+                font-size: 22px;
+            }
+
+            @media(max-width: $size-dekstop-sml) {
+                font-size: 20px;
+            }
+
+            @media(max-width: $size-phone-lg) {
+                width: 80%;
+            }
+        }
+    }
+}

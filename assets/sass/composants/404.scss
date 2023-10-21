@@ -1,0 +1,72 @@
+/*** PARTIE PAGE 404  ***/
+#error404 {
+    background-image: url("images/composition-isometrique-hebergement-web-icones-pieces-ordinateur-bureau-erreur-404-illustration-vectorielle-caracteres-utilisateurs_1284-80937.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+    background-position-y: -80px;
+    background-color: $font-color-bleu-clair;
+
+    @media(max-width: $size-tablette-lg) {
+        background-position-y: -50px;
+    }
+
+    @media(max-width: $size-tablette-md) {
+        background-position-y: 0px;
+    }
+
+    @media(max-width: $size-tablette-sml) {
+        background-position-y: 100px;
+    }
+
+    @media(max-width: $size-phone-lg) {
+        background-position-y: 200px;
+    }
+
+    h6 {
+        padding-bottom: 50px;
+        text-align: center;
+        margin: 0 20px 0 20px;
+        font-family: $font-base;
+        color: $font-color-mauve-fonce;
+        font-size: $font-size-h6-dekstop-lg;
+
+        @media(max-width: $size-tablette-lg) {
+            font-size: $font-size-h6-tablette-lg;
+        }
+
+        @media(max-width: $size-tablette-md) {
+            font-size: $font-size-h6-tablette-md;
+            padding-bottom: 65px;
+        }
+
+        @media(max-width: $size-tablette-sml) {
+            font-size: $font-size-h6-tablette-sml;
+        }
+
+        @media(max-width: $size-phone-lg) {
+            font-size: $font-size-h6-phone-lg;
+            padding-bottom: 80px;
+        }
+    }
+
+    a {
+        padding-bottom: 50px;
+        font-family: $font-base;
+        font-size: 30px;
+        color: $font-color-mauve-fonce;
+
+        @media(max-width: $size-tablette-md) {
+            padding-bottom: 65px;
+        }
+
+        @media(max-width: $size-phone-lg) {
+            font-size: 25px;
+            padding-bottom: 80px;
+        }
+    }
+}

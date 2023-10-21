@@ -1,0 +1,146 @@
+/*** PARTIE ABOUT  ***/
+#about {
+    background-color: $font-color-black;
+    position: relative;
+    overflow: hidden;
+
+    #aboutEnfant {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+
+        @media(max-width: $size-dekstop-md-sml) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+    }
+
+    #aboutParallax {
+        position: relative;
+
+        p {
+            font-size: $font-size-p-dekstop-lg;
+            font-family: $font-base;
+            color: $font-color-rose;
+            text-align: center;
+            letter-spacing: 2px;
+            line-height: 1.5;
+            font-style: italic;
+            position: absolute;
+            margin: 0px 15px 0px 15px;
+
+            @media(max-width: $size-dekstop-md) {
+                padding-left: 30px;
+                font-size: $font-size-p-dekstop-md;
+            }
+
+            @media(max-width: $size-dekstop-sml) {
+                font-size: $font-size-p-dekstop-sml;
+            }
+
+            @media(max-width: $size-tablette-lg) {
+                left: 40px;
+            }
+
+            @media(max-width: $size-phone-lg) {
+                left: 0px;
+            }
+
+            @media(max-width: $size-phone-lg-md) {
+                font-size: $font-size-p-phone-lg-md;
+            }
+
+            @media(max-width: $size-phone) {
+                font-size: $font-size-p-phone;
+                margin: 0px 5px 0px 5px;
+            }
+
+            &::before,
+            &::after {
+                content: ' " ';
+                width: 100%;
+                height: 100%;
+                color: $font-color-mauve;
+                font-size: $font-size-quote;
+                font-weight: bold;
+                font-style: italic;
+                font-family: $font-special-quote;
+            }
+        }
+    }
+
+    #aboutParallax2 {
+        top: $aboutParallax2-top-dekstop-lg;
+        position: relative;
+
+        @media(max-width: $size-dekstop-lg-md) {
+            width: $aboutParallax2-width-dekstop-lg-md;
+        }
+
+        @media(max-width: $size-dekstop-md) {
+            width: $aboutParallax2-width-dekstop-md;
+        }
+
+        @media(max-width: $size-dekstop-md-sml) {
+            top: $aboutParallax2-top-dekstop-md-sml;
+            width: $aboutParallax2-width-dekstop-md-sml;
+        }
+
+        @media(max-width: $size-dekstop-sml) {
+            width: $aboutParallax2-width-dekstop-sml;
+            top: $aboutParallax2-top-dekstop-sml;
+            left: 10%;
+        }
+
+        @media(max-width: $size-dekstop-sml-sml) {
+            width: $aboutParallax2-width-dekstop-sml;
+            top: $aboutParallax2-top-dekstop-sml-sml;
+        }
+
+        @media(max-width: $size-tablette-lg) {
+            width: $aboutParallax2-width-tablette-lg;
+            top: $aboutParallax2-top-tablette-lg;
+        }
+
+        @media(max-width: $size-tablette-lg-md) {
+            width: $aboutParallax2-width-tablette-lg-md;
+            top: $aboutParallax2-top-tablette-lg-md;
+        }
+
+        @media(max-width: $size-tablette-sml) {
+            top: $aboutParallax2-top-tablette-sml;
+            width: $aboutParallax2-width-tablette-sml;
+        }
+
+        @media(max-width: $size-phone-lg) {
+            width: $aboutParallax2-width-phone-lg;
+            top: $aboutParallax2-top-tablette-lg-md;
+            left: 10px;
+        }
+
+        @media(max-width: $size-phone-lg-md) {
+            top: $aboutParallax2-top-phone-lg-md;
+            width: $aboutParallax2-width-phone-lg-md;
+        }
+
+        @media(max-width: $size-phone) {
+            top: $aboutParallax2-top-phone;
+            width: $aboutParallax2-width-phone;
+            left: 10px;
+        }
+
+        @media(max-width: $size-phone-sml) {
+            top: $aboutParallax2-top-phone-sml;
+        }
+
+        #imageOrdiColor {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: none;
+        }
+    }
+}

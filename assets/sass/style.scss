@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro&family=Fredericka+the+Great&family=Handlee&family=Henny+Penny&family=Homenaje&family=Imbue:opsz,wght@10..100,400;10..100,500&family=Julee&family=Noto+Sans+Ogham&family=Roboto&family=Rubik&family=Tilt+Prism&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro&family=Fredericka+the+Great&family=Handlee&family=Henny+Penny&family=Homenaje&family=Imbue:opsz,wght@10..100,500&family=Julee&family=Noto+Sans+Ogham&family=Roboto&family=Rubik&family=Tilt+Prism&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro&family=Fredericka+the+Great&family=Handlee&family=Henny+Penny&family=Homenaje&family=Imbue:opsz,wght@10..100,500&family=Julee&family=Noto+Sans+Ogham&family=Poppins&family=Rubik&family=Tilt+Prism&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;400&display=swap');
+
+@import "layout/variable.scss";
+@import "layout/animations.scss";
+@import "layout/base.scss";
+@import "layout/sections-classes.scss";
+@import "layout/title-classes.scss";
+
+@import "composants/header.scss";
+
+@import "composants/about.scss";
+@import "composants/contact.scss";
+@import "composants/404.scss";
+@import "composants/home.scss";
+@import "composants/work.scss";
+
+@import "composants/projects.scss";
+@import "composants/webDesignProjects.scss";
+@import "composants/footer.scss";

@@ -1,0 +1,198 @@
+/*****   TAG FONT   *****/
+$font-base: 'Homenaje', sans-serif;
+$font-header: "Imbue", serif;
+$font-special-quote: "Roboto", sans-serif;
+$font-text: "Raleway", sans-serif;
+
+/*****   TAG COLOR   *****/
+$font-color-white: #ffffff;
+$font-color-rose: #e796f7;
+$font-color-mauve: #6461f2;
+$font-color-mauve-fonce: #5453dd;
+$font-color-mauve-clair: #E4E4F6;
+$font-color-bleu-clair: #cde2ff;
+$font-color-gris: #787887;
+$font-color-black-Leger: #191919;
+$font-color-black: black;
+
+
+/*****   TAG MENU   *****/
+$menu-width: 150px;
+$menu-height: 150px;
+
+/*****   SIZE TRIANGLE 1   *****/
+$menu-width-triangle1-dekstop-lg: 290px;
+$menu-height-triangle1-dekstop-lg: 290px;
+
+$menu-width-triangle1-dekstop-sml: 240px;
+$menu-height-triangle1-dekstop-sml: 240px;
+
+$menu-width-triangle1-tablette-lg: 215px;
+$menu-height-triangle1-tablette-lg: 215px;
+
+$menu-width-triangle1-tablette-md: 190px;
+$menu-height-triangle1-tablette-md: 190px;
+
+$menu-width-triangle1-phone-lg: 170px;
+$menu-height-triangle1-phone-lg: 170px;
+
+/*****   RESIZING TRIANGLE 1   *****/
+$triangle1-resizing-left-dekstop-lg: 40%;
+$triangle1-resizing-left-tablette-md: 30%;
+$triangle1-resizing-left-tablette-sml: 25%;
+$triangle1-resizing-left-phone-lg: 22%;
+$triangle1-resizing-left-phone: 14%;
+$triangle1-resizing-left-phone-md: 10.5%;
+$triangle1-resizing-left-phone-sml: 5%;
+
+/*****   SIZE TRIANGLE 2   *****/
+$menu-width-triangle2-dekstop-lg: 265px;
+$menu-height-triangle2-dekstop-lg: 265px;
+
+$menu-width-triangle2-dekstop-sml: 215px;
+$menu-height-triangle2-dekstop-sml: 215px;
+
+$menu-width-triangle2-tablette-lg: 190px;
+$menu-height-triangle2-tablette-lg: 190px;
+
+$menu-width-triangle2-tablette-md: 165px;
+$menu-height-triangle2-tablette-md: 165px;
+
+$menu-width-triangle2-phone-lg: 145px;
+$menu-height-triangle2-phone-lg: 145px;
+
+/*****   RESIZING TRIANGLE 2   *****/
+$triangle2-resizing-left-dekstop-lg: 41.5%;
+$triangle2-resizing-left-tablette-md: 31.5%;
+$triangle2-resizing-left-tablette-sml: 26.5%;
+$triangle2-resizing-left-phone-lg: 23.5%;
+$triangle2-resizing-left-phone: 15.5%;
+$triangle2-resizing-left-phone-md: 12.5%;
+$triangle2-resizing-left-phone-sml: 6.5%;
+
+/*****   FONT SIZE MENU BURGER  *****/
+$font-size-li: 21px;
+
+/*****   SIZE MENU BURGER  *****/
+$menu-burger-width-tablette-md: 44px;
+$menu-burger-height-tablette-md: 24px;
+
+/*****   FONT SIZE TITLE H1  *****/
+$font-size-h1-dekstop-lg: 84px;
+$font-size-h1-dekstop-md: 74px;
+$font-size-h1-dekstop-sml: 54px;
+$font-size-h1-tablette-lg: 48px;
+
+/*****   RESIZING TITLE H1  *****/
+$h1-resizing-left-dekstop-lg: 35%;
+$h1-resizing-left-tablette-md: 15%;
+$h1-resizing-left-phone-lg: 10%;
+$h1-resizing-left-phone: 5%;
+
+/*****   RESIZING TOP ABOUTPARALLAX2   *****/
+$aboutParallax2-top-dekstop-lg: 70px;
+$aboutParallax2-top-dekstop-md-sml: 270px;
+$aboutParallax2-top-dekstop-sml: 255px;
+$aboutParallax2-top-dekstop-sml-sml: 260px;
+$aboutParallax2-top-tablette-lg: 270px;
+$aboutParallax2-top-tablette-lg-md: 300px;
+$aboutParallax2-top-tablette-sml: 300px;
+$aboutParallax2-top-phone-lg: 310px;
+$aboutParallax2-top-phone-lg-md: 350px;
+$aboutParallax2-top-phone: 360px;
+$aboutParallax2-top-phone-sml: 420px;
+
+/*****   RESIZING WIDTH ABOUTPARALLAX2   *****/
+$aboutParallax2-width-dekstop-lg-md: 120%;
+$aboutParallax2-width-dekstop-md: 140%;
+$aboutParallax2-width-dekstop-md-sml: 55%;
+$aboutParallax2-width-dekstop-sml: 63%;
+$aboutParallax2-width-dekstop-sml-sml: 80%;
+$aboutParallax2-width-tablette-lg: 85%;
+$aboutParallax2-width-tablette-lg-md: 90%;
+$aboutParallax2-width-tablette-sml: 105%;
+$aboutParallax2-width-phone-lg: 115%;
+$aboutParallax2-width-phone-lg-md: 120%;
+$aboutParallax2-width-phone: 130%;
+
+/*****   RESIZING BLOCK WORK   *****/
+$width-block-work-dekstop-sml-sml: 50%;
+$width-block-work-tablette-lg: 55%;
+$width-block-work-tablette-lg-md: 60%;
+$width-block-work-tablette-sml: 70%;
+$width-block-work-phone-lg: 80%;
+$width-block-work-phone-lg-md: 80%;
+$width-block-work-phone: 88%;
+$width-block-work-phone-sml: 100%;
+
+/*****   RESIZING WIDTH IMG PROJECTS   *****/
+$width-imgProjects-dekstop-lg: 100%;
+$width-imgProjects-dekstop-sml: 80%;
+$width-imgProjects-dekstop-sml-sml: 95%;
+$width-imgProjects-tablette-lg: 100%;
+$width-imgProjects-tablette-sml: 110%;
+$width-imgProjects-phone-lg: 125%;
+$width-imgProjects-phone: 130%;
+
+/*****   RESIZING WIDTH h4 PROJECTS   *****/
+$width-h4-dekstop-lg: 80%;
+$width-h4-dekstop-sml: 50%;
+$width-h4-tablette-sml: 60%;
+$width-h4-phone-lg-md: 70%;
+$width-h4-phone-sml: 80%;
+
+/*****   RESIZING PADDING LEFT IMG PROJECTS   *****/
+$imgProjects-paddingLeft-dekstop-sml: 120px;
+$imgProjects-paddingLeft-tablette-sml: 90px;
+$imgProjects-paddingLeft-phone-lg: 70px;
+$imgProjects-paddingLeft-phone: 55px;
+$imgProjects-paddingLeft-phone: 55px;
+
+/*****   FONT SIZE TITLE H2  *****/
+$font-size-h2-dekstop-lg: 60px;
+$font-size-h2-dekstop-sml: 50px;
+
+/*****   FONT SIZE TITLE H3  *****/
+$font-size-h3-dekstop-lg: 30px;
+
+/*****   FONT SIZE TITLE H4  *****/
+$font-size-h4-dekstop-lg: 45px;
+$font-size-h4-dekstop-md-sml: 35px;
+$font-size-h4-dekstop-sml: 30px;
+
+/*****   FONT SIZE TITLE H6  *****/
+$font-size-h6-dekstop-lg: 45px;
+$font-size-h6-tablette-lg: 40px;
+$font-size-h6-tablette-md: 35px;
+$font-size-h6-tablette-sml: 30px;
+$font-size-h6-phone-lg: 25px;
+
+/*****   FONT SIZE TEXT P  *****/
+$font-size-p-dekstop-lg: 24px;
+$font-size-p-dekstop-md: 21px;
+$font-size-p-dekstop-sml: 19px;
+$font-size-p-phone-lg-md: 18px;
+$font-size-p-phone: 17px;
+
+/*****   FONT SIZE QUOTE  *****/
+$font-size-quote: 44px;
+
+/*****   PADDING   *****/
+$padding-h2: 55px;
+
+/*****   TAG SIZE DEKSTOP   *****/
+$size-dekstop-lg-md: 1500px;
+$size-dekstop: 1400px;
+$size-dekstop-md: 1300px;
+$size-dekstop-md-sml: 1200px;
+$size-dekstop-sml: 1100px;
+$size-dekstop-sml-sml: 1000px;
+$size-tablette-lg: 900px;
+$size-tablette-lg-md: 800px;
+$size-tablette-md: 700px;
+$size-tablette-sml: 600px;
+$size-phone-lg: 500px;
+$size-phone-lg-md: 450px;
+$size-phone: 400px;
+$size-phone-md: 375px;
+$size-phone-sml: 350px;

@@ -1,0 +1,188 @@
+/*** PARTIE HOME  ***/
+#home {
+    #home-enfant {
+        display: flex;
+
+        #home-partLeft {
+            background-color: $font-color-black;
+        }
+
+        #home-partRight {
+            padding-top: 105px;
+            text-align: center;
+            position: relative;
+
+            &::after {
+                content: "";
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                display: block;
+                position: absolute;
+                background-image: url("images/splash-gouttes-eau_23-21478283951.webp");
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                opacity: 15%;
+            }
+        }
+
+        .triangle {
+            top: 15%;
+            left: $triangle1-resizing-left-dekstop-lg;
+            position: absolute;
+            background-color: $font-color-mauve;
+            transform: rotate(-90deg) skewX(-30deg) scale(1, .866);
+            z-index: 10;
+
+            @media(max-width: $size-tablette-md) {
+                left: $triangle1-resizing-left-tablette-md;
+            }
+
+            @media(max-width: $size-tablette-sml) {
+                left: $triangle1-resizing-left-tablette-sml;
+            }
+
+            @media(max-width: $size-phone-lg) {
+                left: $triangle1-resizing-left-phone-lg;
+            }
+
+            @media(max-width: $size-phone) {
+                left: $triangle1-resizing-left-phone;
+            }
+
+            @media(max-width: $size-phone-md) {
+                left: $triangle1-resizing-left-phone-md;
+            }
+
+            @media(max-width: $size-phone-sml) {
+                left: $triangle1-resizing-left-phone-sml;
+            }
+        }
+
+        .triangle::before,
+        .triangle::after {
+            content: '';
+            position: absolute;
+            background-color: inherit;
+        }
+
+        .triangle,
+        .triangle::before,
+        .triangle::after {
+            width: $menu-width-triangle1-dekstop-lg;
+            height: $menu-height-triangle1-dekstop-lg;
+            border-top-right-radius: 20%;
+
+            @media(max-width: $size-dekstop-sml) {
+                width: $menu-width-triangle1-dekstop-sml;
+                height: $menu-height-triangle1-dekstop-sml;
+            }
+
+            @media(max-width: $size-tablette-lg) {
+                width: $menu-width-triangle1-tablette-lg;
+                height: $menu-height-triangle1-tablette-lg;
+            }
+
+            @media(max-width: $size-tablette-md) {
+                width: $menu-width-triangle1-tablette-md;
+                height: $menu-height-triangle1-tablette-md;
+            }
+
+            @media(max-width: $size-phone-lg) {
+                width: $menu-width-triangle1-phone-lg;
+                height: $menu-height-triangle1-phone-lg;
+            }
+        }
+
+        .triangle::before {
+            transform: rotate(-135deg) skewX(-45deg) scale(1.414, .707) translate(0, -50%);
+        }
+
+        .triangle::after,
+        .triangleTwo::after {
+            transform: rotate(135deg) skewY(-45deg) scale(.707, 1.414) translate(50%);
+        }
+
+        .triangleTwo {
+            top: 18%;
+            left: $triangle2-resizing-left-dekstop-lg;
+            position: absolute;
+            background-image: url("images/Polygon-4.png");
+            z-index: 11;
+            width: 100%;
+            height: 100%;
+            background-repeat: no-repeat;
+
+            @media(max-width: $size-tablette-md) {
+                left: $triangle2-resizing-left-tablette-md;
+            }
+
+            @media(max-width: $size-tablette-sml) {
+                left: $triangle2-resizing-left-tablette-sml;
+            }
+
+            @media(max-width: $size-phone-lg) {
+                left: $triangle2-resizing-left-phone-lg;
+            }
+
+            @media(max-width: $size-phone) {
+                left: $triangle2-resizing-left-phone;
+            }
+
+            @media(max-width: $size-phone-md) {
+                left: $triangle2-resizing-left-phone-md;
+            }
+
+            @media(max-width: $size-phone-sml) {
+                left: $triangle2-resizing-left-phone-md;
+            }
+        }
+    }
+}
+
+/*** PARTIE   ***/
+.banner-area {
+    h1 {
+        top: 80%;
+        left: $h1-resizing-left-dekstop-lg;
+        position: absolute;
+        color: $font-color-rose;
+        font-size: $font-size-h1-dekstop-lg;
+        font-family: $font-base;
+        letter-spacing: 5px;
+
+        @media(max-width: $size-dekstop) {
+            font-size: $font-size-h1-dekstop-md;
+        }
+
+        @media(max-width: $size-dekstop-sml) {
+            font-size: $font-size-h1-dekstop-sml;
+        }
+
+        @media(max-width: $size-tablette-lg) {
+            font-size: $font-size-h1-tablette-lg;
+        }
+
+        @media(max-width: $size-tablette-md) {
+            top: 60%;
+            left: $h1-resizing-left-tablette-md;
+            font-size: 54px;
+            text-align: center;
+            line-height: 2.5;
+        }
+
+        @media(max-width: $size-phone-lg) {
+            left: $h1-resizing-left-phone-lg;
+        }
+
+        @media(max-width: $size-phone) {
+            left: $h1-resizing-left-phone;
+        }
+    }
+
+    span {
+        color: $font-color-mauve;
+    }
+}
