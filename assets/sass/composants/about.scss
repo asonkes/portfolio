@@ -1,14 +1,16 @@
 /*** PARTIE ABOUT  ***/
 #about {
+    max-width: 100%;
+    min-height: 100vh;
     background-color: $font-color-black;
-    position: relative;
-    overflow: hidden;
 
     #aboutEnfant {
-        position: relative;
+        width: 100%;
+        min-height: calc(100vh - 176px);
         display: flex;
         justify-content: center;
         align-items: stretch;
+        padding-bottom: 55px;
 
         @media(max-width: $size-dekstop-md-sml) {
             display: flex;
@@ -18,44 +20,38 @@
         }
     }
 
-    #aboutParallax {
-        position: relative;
+    .about-partRight {
+        width: 100%;
+        min-height: 100%;
+        display: flex;
+        justify-content: center;
 
         p {
+            height: 350px;
             font-size: $font-size-p-dekstop-lg;
             font-family: $font-base;
             color: $font-color-rose;
             text-align: center;
-            letter-spacing: 2px;
+            letter-spacing: 1px;
             line-height: 1.5;
             font-style: italic;
-            position: absolute;
-            margin: 0px 15px 0px 15px;
-
-            @media(max-width: $size-dekstop-md) {
-                padding-left: 30px;
-                font-size: $font-size-p-dekstop-md;
-            }
-
-            @media(max-width: $size-dekstop-sml) {
-                font-size: $font-size-p-dekstop-sml;
-            }
+            padding: 0px 15px 0px 15px;
+            background-color: aqua;
 
             @media(max-width: $size-tablette-lg) {
-                left: 40px;
+                font-size: $font-size-p-tablette-lg;
             }
 
             @media(max-width: $size-phone-lg) {
-                left: 0px;
+                height: 250px;
+                font-size: $font-size-p-phone-lg;
+                letter-spacing: 0px;
+                line-height: 1.25;
             }
 
-            @media(max-width: $size-phone-lg-md) {
-                font-size: $font-size-p-phone-lg-md;
-            }
-
-            @media(max-width: $size-phone) {
-                font-size: $font-size-p-phone;
-                margin: 0px 5px 0px 5px;
+            @media(max-width: $size-phone-md) {
+                height: 230px;
+                font-size: $font-size-p-phone-md;
             }
 
             &::before,
@@ -68,79 +64,34 @@
                 font-weight: bold;
                 font-style: italic;
                 font-family: $font-special-quote;
+
+                @media(max-width: $size-phone-lg) {
+                    line-height: 0.8;
+
+                }
             }
         }
     }
 
-    #aboutParallax2 {
-        top: $aboutParallax2-top-dekstop-lg;
-        position: relative;
+    .about-partLeft {
+        width: 100%;
+        min-height: 100%;
 
-        @media(max-width: $size-dekstop-lg-md) {
-            width: $aboutParallax2-width-dekstop-lg-md;
-        }
+        .parallax-image {
+            width: 100%;
+            min-height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
 
-        @media(max-width: $size-dekstop-md) {
-            width: $aboutParallax2-width-dekstop-md;
-        }
-
-        @media(max-width: $size-dekstop-md-sml) {
-            top: $aboutParallax2-top-dekstop-md-sml;
-            width: $aboutParallax2-width-dekstop-md-sml;
-        }
-
-        @media(max-width: $size-dekstop-sml) {
-            width: $aboutParallax2-width-dekstop-sml;
-            top: $aboutParallax2-top-dekstop-sml;
-            left: 10%;
-        }
-
-        @media(max-width: $size-dekstop-sml-sml) {
-            width: $aboutParallax2-width-dekstop-sml;
-            top: $aboutParallax2-top-dekstop-sml-sml;
-        }
-
-        @media(max-width: $size-tablette-lg) {
-            width: $aboutParallax2-width-tablette-lg;
-            top: $aboutParallax2-top-tablette-lg;
-        }
-
-        @media(max-width: $size-tablette-lg-md) {
-            width: $aboutParallax2-width-tablette-lg-md;
-            top: $aboutParallax2-top-tablette-lg-md;
-        }
-
-        @media(max-width: $size-tablette-sml) {
-            top: $aboutParallax2-top-tablette-sml;
-            width: $aboutParallax2-width-tablette-sml;
-        }
-
-        @media(max-width: $size-phone-lg) {
-            width: $aboutParallax2-width-phone-lg;
-            top: $aboutParallax2-top-tablette-lg-md;
-            left: 10px;
-        }
-
-        @media(max-width: $size-phone-lg-md) {
-            top: $aboutParallax2-top-phone-lg-md;
-            width: $aboutParallax2-width-phone-lg-md;
-        }
-
-        @media(max-width: $size-phone) {
-            top: $aboutParallax2-top-phone;
-            width: $aboutParallax2-width-phone;
-            left: 10px;
-        }
-
-        @media(max-width: $size-phone-sml) {
-            top: $aboutParallax2-top-phone-sml;
-        }
-
-        #imageOrdiColor {
-            position: absolute;
-            top: 0;
-            left: 0;
-            display: none;
+            #imageOrdiColor {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                display: none;
+            }
         }
     }
 }

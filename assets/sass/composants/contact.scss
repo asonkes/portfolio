@@ -7,18 +7,11 @@
         width: 100%;
         min-height: calc(100% - 176px);
         display: flex;
-        justify-content: center;
-        align-items: center;
-
-        @media(max-width: $size-dekstop-md-sml) {
-            flex-direction: column;
-        }
 
         .contact-part-left {
             width: 100%;
             min-height: 100%;
-            background-color: $font-color-white;
-            box-shadow: inset 5px 2px 20px 20px $font-color-black;
+            background-color: rgba(255, 255, 255, 0.2);
             margin-left: 25px;
 
             @media(max-width: $size-dekstop-md-sml) {
@@ -33,10 +26,6 @@
 
             @media(max-width: $size-phone-lg) {
                 width: 100%;
-            }
-
-            @media(max-width: 380px) {
-                width: 110%;
             }
 
             .contact-text-parent {

@@ -1,5 +1,6 @@
 /*** PARTIE HOME  ***/
 #home {
+
     #home-enfant {
         display: flex;
 
@@ -106,14 +107,16 @@
         }
 
         .triangleTwo {
-            top: 18%;
+            top: 13.5%;
             left: $triangle2-resizing-left-dekstop-lg;
             position: absolute;
-            background-image: url("images/Polygon-4.png");
             z-index: 11;
-            width: 100%;
-            height: 100%;
             background-repeat: no-repeat;
+
+            @media(max-width: $size-dekstop-md-sml) {
+                left: $triangle2-resizing-left-dekstop-md-sml;
+                top: 14%;
+            }
 
             @media(max-width: $size-tablette-md) {
                 left: $triangle2-resizing-left-tablette-md;
@@ -127,6 +130,10 @@
                 left: $triangle2-resizing-left-phone-lg;
             }
 
+            @media(max-width: $size-phone-lg-md) {
+                left: $triangle2-resizing-left-phone-lg-md;
+            }
+
             @media(max-width: $size-phone) {
                 left: $triangle2-resizing-left-phone;
             }
@@ -136,7 +143,53 @@
             }
 
             @media(max-width: $size-phone-sml) {
-                left: $triangle2-resizing-left-phone-md;
+                left: $triangle2-resizing-left-phone-sml;
+            }
+
+            img {
+                @media(max-width: $size-dekstop-sml) {
+                    max-width: $menu-width-triangle2-dekstop-sml;
+                }
+
+                @media(max-width: $size-dekstop-sml-sml) {
+                    max-width: $menu-width-triangle2-dekstop-sml-sml;
+                }
+
+                @media(max-width: $size-tablette-lg) {
+                    max-width: $menu-width-triangle2-tablette-lg;
+                }
+
+                @media(max-width: $size-tablette-lg-md) {
+                    max-width: $menu-width-triangle2-tablette-lg-md;
+                }
+
+                @media(max-width: $size-tablette-md) {
+                    max-width: $menu-width-triangle2-tablette-md;
+                }
+
+                @media(max-width: $size-tablette-sml) {
+                    max-width: $menu-width-triangle2-tablette-sml;
+                }
+
+                @media(max-width: $size-phone-lg) {
+                    max-width: $menu-width-triangle2-phone-lg;
+                }
+
+                @media(max-width: $size-phone-lg-md) {
+                    max-width: $menu-width-triangle2-phone-lg-md;
+                }
+
+                @media(max-width: $size-phone) {
+                    max-width: $menu-width-triangle2-phone;
+                }
+
+                @media(max-width: $size-phone-md) {
+                    max-width: $menu-width-triangle2-phone-md;
+                }
+
+                @media(max-width: $size-phone-sml) {
+                    max-width: $menu-width-triangle2-phone-sml;
+                }
             }
         }
     }
@@ -174,7 +227,9 @@
         }
 
         @media(max-width: $size-phone-lg) {
+            top: 65%;
             left: $h1-resizing-left-phone-lg;
+            line-height: 1.5;
         }
 
         @media(max-width: $size-phone) {

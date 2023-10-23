@@ -83,19 +83,19 @@ if (document.querySelector(".type")) {
 }
 
 /*** JS POUR ABOUT (partie photos ordinateur) ***/
-const aboutParallax2 = document.getElementById("aboutParallax2");
-console.log(aboutParallax2);
+const parallaxImage = document.querySelector(".parallax-image");
+console.log(parallaxImage);
 const imageOrdi = document.getElementById("imageOrdiBlack");
 console.log(imageOrdi);
 const imageOrdiColor = document.getElementById("imageOrdiColor");
 console.log(imageOrdiColor);
 
-if (aboutParallax2) {
-  aboutParallax2.addEventListener("mouseover", () => {
+if (parallaxImage) {
+  parallaxImage.addEventListener("mouseover", () => {
     imageOrdiColor.style.display = "block";
   });
 
-  aboutParallax2.addEventListener("mouseout", () => {
+  parallaxImage.addEventListener("mouseout", () => {
     imageOrdiColor.style.display = "none";
   });
 }

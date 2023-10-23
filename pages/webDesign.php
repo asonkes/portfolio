@@ -9,7 +9,7 @@
 
             while ($don = $req->fetch()) {
                 echo '<a class="project-image" href="index.php?action=webDesign' . $don['name'] . ' ">';
-                echo '<div class="link-other-page">';
+                echo '<div class="link-other-page section">';
                 echo '<p class="link-other-page-text">Découvrez...</p>';
                 echo '</div>';
                 echo '<img class="img-responsive project-image-enfant" src="assets/projects/' . $don['cover'] . '" alt="' . $don['name'] . '">';
@@ -18,7 +18,7 @@
             ?>
         </div>
 
-        <div class="part-left">
+        <div class="part-left section">
             <?php
 
             $reqbdd = $bdd->query("SELECT * FROM projects ORDER BY id ASC LIMIT 0,3");

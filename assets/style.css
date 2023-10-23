@@ -5,25 +5,25 @@
 /*****   TAG FONT   *****/
 /*****   TAG COLOR   *****/
 /*****   TAG MENU   *****/
-/*****   SIZE TRIANGLE 1   *****/
-/*****   RESIZING TRIANGLE 1   *****/
-/*****   SIZE TRIANGLE 2   *****/
-/*****   RESIZING TRIANGLE 2   *****/
 /*****   FONT SIZE MENU BURGER  *****/
 /*****   SIZE MENU BURGER  *****/
 /*****   FONT SIZE TITLE H1  *****/
 /*****   RESIZING TITLE H1  *****/
-/*****   RESIZING TOP ABOUTPARALLAX2   *****/
-/*****   RESIZING WIDTH ABOUTPARALLAX2   *****/
-/*****   RESIZING BLOCK WORK   *****/
-/*****   RESIZING WIDTH IMG PROJECTS   *****/
-/*****   RESIZING WIDTH h4 PROJECTS   *****/
-/*****   RESIZING PADDING LEFT IMG PROJECTS   *****/
 /*****   FONT SIZE TITLE H2  *****/
 /*****   FONT SIZE TITLE H3  *****/
 /*****   FONT SIZE TITLE H4  *****/
+/*****   RESIZING WIDTH h4 PROJECTS   *****/
 /*****   FONT SIZE TITLE H6  *****/
 /*****   FONT SIZE TEXT P  *****/
+/*****   SIZE TRIANGLE 1   *****/
+/*****   RESIZING TRIANGLE 1   *****/
+/*****   SIZE TRIANGLE 2   *****/
+/*****   RESIZING TRIANGLE 2   *****/
+/*****   RESIZING BLOCK WORK   *****/
+/*****   RESIZING WIDTH IMG PROJECTS   *****/
+/*****   RESIZING PADDING LEFT IMG PROJECTS   *****/
+/*****   RESIZING TOP PROJECTS PART RIGHT   *****/
+/*****   RESIZING TOP PROJECTS PART RIGHT LINK OTHER PAGE  *****/
 /*****   FONT SIZE QUOTE  *****/
 /*****   PADDING   *****/
 /*****   TAG SIZE DEKSTOP   *****/
@@ -67,6 +67,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 .wrapper {
@@ -209,7 +213,7 @@ header {
     position: fixed;
     top: 0;
     right: 0;
-    width: 40%;
+    width: 47%;
     display: flex;
     justify-content: center;
     opacity: 0;
@@ -434,15 +438,17 @@ ul li a.active::before {
 
 /*** PARTIE ABOUT  ***/
 #about {
+  max-width: 100%;
+  min-height: 100vh;
   background-color: black;
-  position: relative;
-  overflow: hidden;
 }
 #about #aboutEnfant {
-  position: relative;
+  width: 100%;
+  min-height: calc(100vh - 176px);
   display: flex;
   justify-content: center;
   align-items: stretch;
+  padding-bottom: 55px;
 }
 @media (max-width: 1200px) {
   #about #aboutEnfant {
@@ -452,53 +458,44 @@ ul li a.active::before {
     flex-direction: column;
   }
 }
-#about #aboutParallax {
-  position: relative;
+#about .about-partRight {
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
 }
-#about #aboutParallax p {
+#about .about-partRight p {
+  height: 350px;
   font-size: 24px;
   font-family: "Homenaje", sans-serif;
   color: #e796f7;
   text-align: center;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   line-height: 1.5;
   font-style: italic;
-  position: absolute;
-  margin: 0px 15px 0px 15px;
-}
-@media (max-width: 1300px) {
-  #about #aboutParallax p {
-    padding-left: 30px;
-    font-size: 21px;
-  }
-}
-@media (max-width: 1100px) {
-  #about #aboutParallax p {
-    font-size: 19px;
-  }
+  padding: 0px 15px 0px 15px;
+  background-color: aqua;
 }
 @media (max-width: 900px) {
-  #about #aboutParallax p {
-    left: 40px;
+  #about .about-partRight p {
+    font-size: 22px;
   }
 }
 @media (max-width: 500px) {
-  #about #aboutParallax p {
-    left: 0px;
+  #about .about-partRight p {
+    height: 250px;
+    font-size: 20px;
+    letter-spacing: 0px;
+    line-height: 1.25;
   }
 }
-@media (max-width: 450px) {
-  #about #aboutParallax p {
+@media (max-width: 375px) {
+  #about .about-partRight p {
+    height: 230px;
     font-size: 18px;
   }
 }
-@media (max-width: 400px) {
-  #about #aboutParallax p {
-    font-size: 17px;
-    margin: 0px 5px 0px 5px;
-  }
-}
-#about #aboutParallax p::before, #about #aboutParallax p::after {
+#about .about-partRight p::before, #about .about-partRight p::after {
   content: ' " ';
   width: 100%;
   height: 100%;
@@ -508,86 +505,28 @@ ul li a.active::before {
   font-style: italic;
   font-family: "Roboto", sans-serif;
 }
-#about #aboutParallax2 {
-  top: 70px;
+@media (max-width: 500px) {
+  #about .about-partRight p::before, #about .about-partRight p::after {
+    line-height: 0.8;
+  }
+}
+#about .about-partLeft {
+  width: 100%;
+  min-height: 100%;
+}
+#about .about-partLeft .parallax-image {
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
 }
-@media (max-width: 1500px) {
-  #about #aboutParallax2 {
-    width: 120%;
-  }
-}
-@media (max-width: 1300px) {
-  #about #aboutParallax2 {
-    width: 140%;
-  }
-}
-@media (max-width: 1200px) {
-  #about #aboutParallax2 {
-    top: 270px;
-    width: 55%;
-  }
-}
-@media (max-width: 1100px) {
-  #about #aboutParallax2 {
-    width: 63%;
-    top: 255px;
-    left: 10%;
-  }
-}
-@media (max-width: 1000px) {
-  #about #aboutParallax2 {
-    width: 63%;
-    top: 260px;
-  }
-}
-@media (max-width: 900px) {
-  #about #aboutParallax2 {
-    width: 85%;
-    top: 270px;
-  }
-}
-@media (max-width: 800px) {
-  #about #aboutParallax2 {
-    width: 90%;
-    top: 300px;
-  }
-}
-@media (max-width: 600px) {
-  #about #aboutParallax2 {
-    top: 300px;
-    width: 105%;
-  }
-}
-@media (max-width: 500px) {
-  #about #aboutParallax2 {
-    width: 115%;
-    top: 300px;
-    left: 10px;
-  }
-}
-@media (max-width: 450px) {
-  #about #aboutParallax2 {
-    top: 350px;
-    width: 120%;
-  }
-}
-@media (max-width: 400px) {
-  #about #aboutParallax2 {
-    top: 360px;
-    width: 130%;
-    left: 10px;
-  }
-}
-@media (max-width: 350px) {
-  #about #aboutParallax2 {
-    top: 420px;
-  }
-}
-#about #aboutParallax2 #imageOrdiColor {
+#about .about-partLeft .parallax-image #imageOrdiColor {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   display: none;
 }
 
@@ -600,19 +539,11 @@ ul li a.active::before {
   width: 100%;
   min-height: calc(100% - 176px);
   display: flex;
-  justify-content: center;
-  align-items: center;
-}
-@media (max-width: 1200px) {
-  #contact .contact-Container-parent {
-    flex-direction: column;
-  }
 }
 #contact .contact-Container-parent .contact-part-left {
   width: 100%;
   min-height: 100%;
-  background-color: #ffffff;
-  box-shadow: inset 5px 2px 20px 20px black;
+  background-color: rgba(255, 255, 255, 0.2);
   margin-left: 25px;
 }
 @media (max-width: 1200px) {
@@ -630,11 +561,6 @@ ul li a.active::before {
 @media (max-width: 500px) {
   #contact .contact-Container-parent .contact-part-left {
     width: 100%;
-  }
-}
-@media (max-width: 380px) {
-  #contact .contact-Container-parent .contact-part-left {
-    width: 110%;
   }
 }
 #contact .contact-Container-parent .contact-part-left .contact-text-parent {
@@ -951,8 +877,8 @@ ul li a.active::before {
   #home #home-enfant .triangle,
   #home #home-enfant .triangle::before,
   #home #home-enfant .triangle::after {
-    width: 170px;
-    height: 170px;
+    width: 160px;
+    height: 160px;
   }
 }
 #home #home-enfant .triangle::before {
@@ -963,43 +889,106 @@ ul li a.active::before {
   transform: rotate(135deg) skewY(-45deg) scale(0.707, 1.414) translate(50%);
 }
 #home #home-enfant .triangleTwo {
-  top: 18%;
+  top: 13.5%;
   left: 41.5%;
   position: absolute;
-  background-image: url("images/Polygon-4.png");
   z-index: 11;
-  width: 100%;
-  height: 100%;
   background-repeat: no-repeat;
+}
+@media (max-width: 1200px) {
+  #home #home-enfant .triangleTwo {
+    left: 42%;
+    top: 14%;
+  }
 }
 @media (max-width: 700px) {
   #home #home-enfant .triangleTwo {
-    left: 31.5%;
+    left: 32.5%;
   }
 }
 @media (max-width: 600px) {
   #home #home-enfant .triangleTwo {
-    left: 26.5%;
+    left: 28%;
   }
 }
 @media (max-width: 500px) {
   #home #home-enfant .triangleTwo {
-    left: 23.5%;
+    left: 24.5%;
+  }
+}
+@media (max-width: 450px) {
+  #home #home-enfant .triangleTwo {
+    left: 25%;
   }
 }
 @media (max-width: 400px) {
   #home #home-enfant .triangleTwo {
-    left: 15.5%;
+    left: 17.5%;
   }
 }
 @media (max-width: 375px) {
   #home #home-enfant .triangleTwo {
-    left: 12.5%;
+    left: 14%;
   }
 }
 @media (max-width: 350px) {
   #home #home-enfant .triangleTwo {
-    left: 12.5%;
+    left: 9%;
+  }
+}
+@media (max-width: 1100px) {
+  #home #home-enfant .triangleTwo img {
+    max-width: 82%;
+  }
+}
+@media (max-width: 1000px) {
+  #home #home-enfant .triangleTwo img {
+    max-width: 83%;
+  }
+}
+@media (max-width: 900px) {
+  #home #home-enfant .triangleTwo img {
+    max-width: 74%;
+  }
+}
+@media (max-width: 800px) {
+  #home #home-enfant .triangleTwo img {
+    max-width: 75%;
+  }
+}
+@media (max-width: 700px) {
+  #home #home-enfant .triangleTwo img {
+    max-width: 66%;
+  }
+}
+@media (max-width: 600px) {
+  #home #home-enfant .triangleTwo img {
+    max-width: 68%;
+  }
+}
+@media (max-width: 500px) {
+  #home #home-enfant .triangleTwo img {
+    max-width: 65%;
+  }
+}
+@media (max-width: 450px) {
+  #home #home-enfant .triangleTwo img {
+    max-width: 65%;
+  }
+}
+@media (max-width: 400px) {
+  #home #home-enfant .triangleTwo img {
+    max-width: 74%;
+  }
+}
+@media (max-width: 375px) {
+  #home #home-enfant .triangleTwo img {
+    max-width: 76%;
+  }
+}
+@media (max-width: 350px) {
+  #home #home-enfant .triangleTwo img {
+    max-width: 78%;
   }
 }
 
@@ -1039,7 +1028,9 @@ ul li a.active::before {
 }
 @media (max-width: 500px) {
   .banner-area h1 {
+    top: 65%;
     left: 10%;
+    line-height: 1.5;
   }
 }
 @media (max-width: 400px) {
@@ -1109,6 +1100,7 @@ ul li a.active::before {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 @media (max-width: 1100px) {
   .projects .projects-all-block {
@@ -1146,8 +1138,6 @@ ul li a.active::before {
   transition: all 2s ease-out;
 }
 .projects .projects-all-block .part-right a .link-other-page {
-  width: 100%;
-  height: 100%;
   position: absolute;
   display: flex;
   justify-content: center;
@@ -1185,7 +1175,7 @@ ul li a.active::before {
 }
 .projects .projects-all-block .part-right a .link-other-page:hover {
   background-color: rgba(255, 255, 255, 0.8);
-  transition: all 1s ease-out;
+  transition: all 0.5s ease-out;
 }
 .projects .projects-all-block .part-right a .link-other-page:hover .link-other-page-text {
   opacity: 1;
@@ -1240,8 +1230,6 @@ ul li a.active::before {
 }
 
 .part-left {
-  width: 100%;
-  height: 100%;
   background-color: rgba(255, 255, 255, 0.2);
   margin-left: 80px;
   display: flex;
