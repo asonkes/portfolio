@@ -42,6 +42,9 @@ $h1-resizing-left-phone: 5%;
 $font-size-h2-dekstop-lg: 60px;
 $font-size-h2-dekstop-sml: 50px;
 
+/*****   PADDING H2  *****/
+$padding-h2: 55px;
+
 /*****   FONT SIZE TITLE H3  *****/
 $font-size-h3-dekstop-lg: 30px;
 
@@ -51,7 +54,7 @@ $font-size-h4-dekstop-md-sml: 35px;
 $font-size-h4-dekstop-sml: 30px;
 
 /*****   RESIZING WIDTH h4 PROJECTS   *****/
-$width-h4-dekstop-lg: 80%;
+$width-h4-dekstop-lg: 75%;
 $width-h4-dekstop-sml: 50%;
 $width-h4-tablette-sml: 60%;
 $width-h4-phone-lg-md: 70%;
@@ -69,6 +72,11 @@ $font-size-p-dekstop-lg: 24px;
 $font-size-p-tablette-lg: 22px;
 $font-size-p-phone-lg: 20px;
 $font-size-p-phone-md: 18px;
+
+/*****   FONT SIZE CONTACT TEXT P  *****/
+$font-size-contact-p-dekstop-lg: 22px;
+$font-size-contact-p-tablette-lg: 20px;
+$font-size-contact-p-phone-lg: 18px;
 
 /*****   SIZE TRIANGLE 1   *****/
 $menu-width-triangle1-dekstop-lg: 290px;
@@ -97,9 +105,7 @@ $triangle1-resizing-left-phone-sml: 5%;
 
 /*****   SIZE TRIANGLE 2   *****/
 $menu-width-triangle2-dekstop-sml: 82%;
-
 $menu-width-triangle2-dekstop-sml-sml: 83%;
-
 $menu-width-triangle2-tablette-lg: 74%;
 $menu-height-triangle2-tablette-lg: 40%;
 $menu-width-triangle2-tablette-lg-md: 75%;
@@ -132,40 +138,46 @@ $width-block-work-phone-lg-md: 80%;
 $width-block-work-phone: 88%;
 $width-block-work-phone-sml: 100%;
 
-/*****   RESIZING WIDTH IMG PROJECTS   *****/
-$width-imgProjects-dekstop-lg: 100%;
-$width-imgProjects-dekstop-sml: 80%;
-$width-imgProjects-dekstop-sml-sml: 95%;
-$width-imgProjects-tablette-lg: 100%;
-$width-imgProjects-tablette-sml: 110%;
-$width-imgProjects-phone-lg: 125%;
-$width-imgProjects-phone: 130%;
+/*****   RESIZING BLOCK PROJECTS   *****/
+$width-partRight-projects-dekstop-lg: 100%;
+$width-partRight-projects-dekstop-md-sml: 60%;
+$width-partRight-projects-dekstop-sml-sml: 70%;
+$width-partRight-projects-tablette-lg: 75%;
+$width-partRight-projects-tablette-md: 75%;
+$width-partRight-projects-tablette-sml: 80%;
+$width-partRight-projects-phone-lg: 85%;
+$width-partRight-projects-phone-md: 90%;
 
-/*****   RESIZING PADDING LEFT IMG PROJECTS   *****/
-$imgProjects-paddingLeft-dekstop-sml: 120px;
-$imgProjects-paddingLeft-tablette-sml: 90px;
-$imgProjects-paddingLeft-phone-lg: 70px;
-$imgProjects-paddingLeft-phone: 55px;
-$imgProjects-paddingLeft-phone: 55px;
+/*****   RESIZING IMAGE CONTACT   *****/
+$width-image-contact-dekstop-md-sml: 60%;
+$width-image-contact-tablette-lg: 70%;
+$width-image-contact-phone-lg: 85%;
+$width-image-contact-phone: 95%;
 
-/*****   RESIZING TOP PROJECTS PART RIGHT   *****/
-$top-projects-partRight-dekstop-sml-sml: 70px;
-$top-projects-partRight-tablette-lg-md: 100px;
-$top-projects-partRight-tablette-sml: 115px;
-
-/*****   RESIZING TOP PROJECTS PART RIGHT LINK OTHER PAGE  *****/
-$width-projects-partRight-linkOtherPage-dekstop-sml: 68%;
-$width-projects-partRight-linkOtherPage-dekstop-sml-sml: 66%;
-$width-projects-partRight-linkOtherPage-tablette-md: 66%;
-$width-projects-partRight-linkOtherPage-tablette-lg: 68%;
-$width-projects-partRight-linkOtherPage-tablette-sml: 70%;
-$width-projects-partRight-linkOtherPage-phone-lg: 72%;
+/*****   MARGIN-TOP BLOCK PROJECTS   *****/
+$marginTop-partRight-projects-dekstop-md-sml: 105px;
+$marginTop-partRight-projects-dekstop-sml-sml: 145px;
 
 /*****   FONT SIZE QUOTE  *****/
 $font-size-quote: 44px;
 
-/*****   PADDING   *****/
-$padding-h2: 55px;
+/*****   RESIZING ICONS IMG  *****/
+$width-icons-dekstop-lg: 46px;
+$width-icons-tablette-lg: 35px;
+$width-icons-phone-lg: 27px;
+$width-icons-phone-sml: 23px;
+
+/*****   RESIZING ICONS IMG  *****/
+$height-icons-dekstop-lg: 44px;
+$height-icons-tablette-lg: 33px;
+$height-icons-phone-lg: 25px;
+$height-icons-phone-sml: 21px;
+
+/*****   RESIZING SPECIAL ICONS  *****/
+$width-special-icons-dekstop-lg: 65px;
+$width-special-icons-tablette-lg: 53px;
+$width-special-icons-phone-lg: 45px;
+$width-special-icons-phone-sml: 38px;
 
 /*****   TAG SIZE DEKSTOP   *****/
 $size-dekstop-lg-md: 1500px;

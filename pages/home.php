@@ -80,14 +80,15 @@
     <div id="contact">
         <h2 class="title-h2">Contact</h2>
         <div class="contact-Container-parent wrapper">
-            <div class="contact-part-left">
+            <div class="contact-part-right"></div>
+            <div class="contact-part-left section-enfant">
                 <div class="contact-text-parent">
                     <p class="contact-text-enfant">Contactez-moi</p>
                     <p class="contact-text"><span class="contact-text-spanFirst">Nom:</span><span class="contact-text-spanSecond"> Sonkes Audrey</span></p>
                     <p class="contact-text"><span class="contact-text-spanFirst">E-mail:</span><span class="contact-text-spanSecond"> audrey.sonkes@gmail.com</span></p>
                     <p class="contact-text-enfant ">Mes Compétences:</p>
 
-                    <div class="contact-icons-parent">
+                    <div class="contact-icons-parent section">
 
                         <img class="contact-icons" src="assets/icones/html.webp" alt="image avec le logo de HTML, celui-ci a un fond rouge avec les lettres HTML en majuscule.">
 
@@ -109,6 +110,5 @@
                     </div>
                 </div>
             </div>
-            <div class="contact-part-right"></div>
         </div>
     </div>

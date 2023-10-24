@@ -1,32 +1,54 @@
 #contact {
     max-width: 100%;
     min-height: calc(100vh - 40px);
-    background-color: black;
+    //background-color: $font-color-black;
 
     .contact-Container-parent {
         width: 100%;
         min-height: calc(100% - 176px);
         display: flex;
 
-        .contact-part-left {
+        @media(max-width: $size-dekstop-md-sml) {
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 35px;
+        }
+
+        .contact-part-right {
             width: 100%;
-            min-height: 100%;
-            background-color: rgba(255, 255, 255, 0.2);
-            margin-left: 25px;
+            height: 600px;
+            background-image: url("images/IMG_20231021_174058.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-color: $font-color-black;
+            box-shadow: inset 5px 2px 20px 20px $font-color-black;
+            background-size: contain;
 
             @media(max-width: $size-dekstop-md-sml) {
-                width: 75%;
-                margin-left: 0px;
-                margin-bottom: 30px;
+                height: 450px;
+            }
+        }
+
+        .contact-part-left {
+            background-color: rgba(255, 255, 255, 0.2);
+
+            @media(max-width: $size-dekstop-md-sml) {
+                width: $width-image-contact-dekstop-md-sml;
+                margin-top: 25px;
             }
 
-            @media(max-width: $size-tablette-sml) {
-                width: 85%;
+            @media(max-width: $size-tablette-lg) {
+                width: $width-image-contact-tablette-lg;
             }
 
             @media(max-width: $size-phone-lg) {
-                width: 100%;
+                width: $width-image-contact-phone-lg;
             }
+
+            @media(max-width: $size-phone) {
+                width: $width-image-contact-phone;
+            }
+
 
             .contact-text-parent {
                 padding: 50px 0px 50px 0px;
@@ -37,10 +59,14 @@
 
                 .contact-text-enfant {
                     font-size: 40px;
-                    color: $font-color-mauve;
+                    color: #9e9df9;
                     text-align: center;
                     text-decoration: underline;
-                    padding: 15px;
+                    padding: 35px;
+
+                    @media(max-width: $size-dekstop-md-sml) {
+                        padding: 20px;
+                    }
 
                     @media(max-width: $size-tablette-lg) {
                         font-size: 35px;
@@ -59,96 +85,71 @@
             .contact-text {
                 width: 100%;
                 text-align: center;
-                font-size: 22px;
+                font-size: $font-size-contact-p-dekstop-lg;
                 padding: 10px;
                 font-family: $font-text;
 
                 @media(max-width: $size-tablette-lg) {
-                    font-size: 20px;
+                    font-size: $font-size-contact-p-tablette-lg;
                 }
 
                 @media(max-width: $size-phone-lg) {
-                    font-size: 18px;
+                    font-size: $font-size-contact-p-phone-lg;
                 }
 
                 .contact-text-spanFirst {
                     font-weight: bolder;
-                    color: $font-color-mauve;
+                    color: #9e9df9;
                     text-decoration: underline;
                 }
 
-                contact-text-spanSecond {
+                .contact-text-spanSecond {
+                    color: $font-color-white;
                     text-decoration: none;
                 }
             }
 
             .contact-icons-parent {
-                width: 100%;
-                height: 100%;
                 display: flex;
                 justify-content: center;
 
 
                 img {
-                    width: 46px;
-                    height: 44px;
+                    width: $width-icons-dekstop-lg;
+                    height: $height-icons-dekstop-lg;
                     margin: 15px 5px 15px 5px;
 
                     @media(max-width: $size-tablette-lg) {
-                        width: 35px;
-                        height: 33px;
+                        width: $width-icons-tablette-lg;
+                        height: $height-icons-tablette-lg;
                     }
 
                     @media(max-width: $size-phone-lg) {
-                        width: 27px;
-                        height: 25px;
+                        width: $width-icons-phone-lg;
+                        height: $height-icons-phone-lg;
                     }
 
                     @media(max-width: $size-phone-sml) {
-                        width: 23px;
-                        height: 21px;
+                        width: $width-icons-phone-sml;
+                        height: $height-icons-phone-sml;
                     }
                 }
 
                 .special-size-icons {
-                    width: 65px;
+                    width: $width-special-icons-dekstop-lg;
 
                     @media(max-width: $size-tablette-lg) {
-                        width: 53px;
+                        width: $width-special-icons-tablette-lg;
                     }
 
                     @media(max-width: $size-phone-lg) {
-                        width: 45px;
+                        width: $width-special-icons-phone-lg;
                     }
 
                     @media(max-width: $size-phone-sml) {
-                        width: 38px;
+                        width: $width-special-icons-phone-sml;
                     }
                 }
-            }
-        }
-
-        .contact-part-right {
-            width: 100%;
-            height: 600px;
-            background-image: url("images/IMG_20231021_174058.jpg");
-            background-repeat: no-repeat;
-            background-position: center;
-            background-color: $font-color-black;
-            box-shadow: inset 5px 2px 20px 20px $font-color-black;
-            background-size: contain;
-            margin-right: 25px;
-
-            @media(max-width: $size-dekstop-md-sml) {
-                width: 75%;
-                height: 400px;
-                order: -1;
-                margin-right: 0px;
-                margin-bottom: 30px;
-            }
-
-            @media(max-width: $size-phone-lg) {
-                width: 85%;
             }
         }
     }

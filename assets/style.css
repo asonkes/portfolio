@@ -10,22 +10,25 @@
 /*****   FONT SIZE TITLE H1  *****/
 /*****   RESIZING TITLE H1  *****/
 /*****   FONT SIZE TITLE H2  *****/
+/*****   PADDING H2  *****/
 /*****   FONT SIZE TITLE H3  *****/
 /*****   FONT SIZE TITLE H4  *****/
 /*****   RESIZING WIDTH h4 PROJECTS   *****/
 /*****   FONT SIZE TITLE H6  *****/
 /*****   FONT SIZE TEXT P  *****/
+/*****   FONT SIZE CONTACT TEXT P  *****/
 /*****   SIZE TRIANGLE 1   *****/
 /*****   RESIZING TRIANGLE 1   *****/
 /*****   SIZE TRIANGLE 2   *****/
 /*****   RESIZING TRIANGLE 2   *****/
 /*****   RESIZING BLOCK WORK   *****/
-/*****   RESIZING WIDTH IMG PROJECTS   *****/
-/*****   RESIZING PADDING LEFT IMG PROJECTS   *****/
-/*****   RESIZING TOP PROJECTS PART RIGHT   *****/
-/*****   RESIZING TOP PROJECTS PART RIGHT LINK OTHER PAGE  *****/
+/*****   RESIZING BLOCK PROJECTS   *****/
+/*****   RESIZING IMAGE CONTACT   *****/
+/*****   MARGIN-TOP BLOCK PROJECTS   *****/
 /*****   FONT SIZE QUOTE  *****/
-/*****   PADDING   *****/
+/*****   RESIZING ICONS IMG  *****/
+/*****   RESIZING ICONS IMG  *****/
+/*****   RESIZING SPECIAL ICONS  *****/
 /*****   TAG SIZE DEKSTOP   *****/
 /*** ANIMATIONS POUR WORK (effet pour les blocks) ***/
 [data-effect=fade-in-right].is-animate,
@@ -474,7 +477,6 @@ ul li a.active::before {
   line-height: 1.5;
   font-style: italic;
   padding: 0px 15px 0px 15px;
-  background-color: aqua;
 }
 @media (max-width: 900px) {
   #about .about-partRight p {
@@ -533,34 +535,56 @@ ul li a.active::before {
 #contact {
   max-width: 100%;
   min-height: calc(100vh - 40px);
-  background-color: black;
 }
 #contact .contact-Container-parent {
   width: 100%;
   min-height: calc(100% - 176px);
   display: flex;
 }
-#contact .contact-Container-parent .contact-part-left {
+@media (max-width: 1200px) {
+  #contact .contact-Container-parent {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 35px;
+  }
+}
+#contact .contact-Container-parent .contact-part-right {
   width: 100%;
-  min-height: 100%;
+  height: 600px;
+  background-image: url("images/IMG_20231021_174058.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: black;
+  box-shadow: inset 5px 2px 20px 20px black;
+  background-size: contain;
+}
+@media (max-width: 1200px) {
+  #contact .contact-Container-parent .contact-part-right {
+    height: 450px;
+  }
+}
+#contact .contact-Container-parent .contact-part-left {
   background-color: rgba(255, 255, 255, 0.2);
-  margin-left: 25px;
 }
 @media (max-width: 1200px) {
   #contact .contact-Container-parent .contact-part-left {
-    width: 75%;
-    margin-left: 0px;
-    margin-bottom: 30px;
+    width: 60%;
+    margin-top: 25px;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   #contact .contact-Container-parent .contact-part-left {
-    width: 85%;
+    width: 70%;
   }
 }
 @media (max-width: 500px) {
   #contact .contact-Container-parent .contact-part-left {
-    width: 100%;
+    width: 85%;
+  }
+}
+@media (max-width: 400px) {
+  #contact .contact-Container-parent .contact-part-left {
+    width: 95%;
   }
 }
 #contact .contact-Container-parent .contact-part-left .contact-text-parent {
@@ -573,10 +597,15 @@ ul li a.active::before {
 }
 #contact .contact-Container-parent .contact-part-left .contact-text-parent .contact-text-enfant {
   font-size: 40px;
-  color: #6461f2;
+  color: #9e9df9;
   text-align: center;
   text-decoration: underline;
-  padding: 15px;
+  padding: 35px;
+}
+@media (max-width: 1200px) {
+  #contact .contact-Container-parent .contact-part-left .contact-text-parent .contact-text-enfant {
+    padding: 20px;
+  }
 }
 @media (max-width: 900px) {
   #contact .contact-Container-parent .contact-part-left .contact-text-parent .contact-text-enfant {
@@ -612,15 +641,14 @@ ul li a.active::before {
 }
 #contact .contact-Container-parent .contact-part-left .contact-text .contact-text-spanFirst {
   font-weight: bolder;
-  color: #6461f2;
+  color: #9e9df9;
   text-decoration: underline;
 }
-#contact .contact-Container-parent .contact-part-left .contact-text contact-text-spanSecond {
+#contact .contact-Container-parent .contact-part-left .contact-text .contact-text-spanSecond {
+  color: #ffffff;
   text-decoration: none;
 }
 #contact .contact-Container-parent .contact-part-left .contact-icons-parent {
-  width: 100%;
-  height: 100%;
   display: flex;
   justify-content: center;
 }
@@ -663,31 +691,6 @@ ul li a.active::before {
 @media (max-width: 350px) {
   #contact .contact-Container-parent .contact-part-left .contact-icons-parent .special-size-icons {
     width: 38px;
-  }
-}
-#contact .contact-Container-parent .contact-part-right {
-  width: 100%;
-  height: 600px;
-  background-image: url("images/IMG_20231021_174058.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: black;
-  box-shadow: inset 5px 2px 20px 20px black;
-  background-size: contain;
-  margin-right: 25px;
-}
-@media (max-width: 1200px) {
-  #contact .contact-Container-parent .contact-part-right {
-    width: 75%;
-    height: 400px;
-    order: -1;
-    margin-right: 0px;
-    margin-bottom: 30px;
-  }
-}
-@media (max-width: 500px) {
-  #contact .contact-Container-parent .contact-part-right {
-    width: 85%;
   }
 }
 
@@ -1087,46 +1090,26 @@ ul li a.active::before {
 }
 
 .projects {
-  max-width: 100%;
-  height: calc(100vh - 40px);
   background-image: url("images/flux-conception-code-binaire_53876-97406.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 .projects .projects-all-block {
-  width: 100%;
-  height: calc(100% - 176px);
+  max-width: 100%;
+  min-height: calc(100vh - 176px);
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
 }
-@media (max-width: 1100px) {
+@media (max-width: 1200px) {
   .projects .projects-all-block {
     flex-direction: column;
   }
 }
 .projects .projects-all-block .part-right {
-  width: 100%;
-  height: 70%;
   position: relative;
-  margin-left: 35px;
-}
-@media (max-width: 1000px) {
-  .projects .projects-all-block .part-right {
-    top: 70px;
-  }
-}
-@media (max-width: 800px) {
-  .projects .projects-all-block .part-right {
-    top: 100px;
-  }
-}
-@media (max-width: 600px) {
-  .projects .projects-all-block .part-right {
-    top: 115px;
-  }
+  margin: 55px;
 }
 .projects .projects-all-block .part-right a {
   width: 100%;
@@ -1134,44 +1117,50 @@ ul li a.active::before {
   left: 50%;
   transform: translate(-50%, -50%);
   position: absolute;
-  margin-right: 80px;
   transition: all 2s ease-out;
+}
+@media (max-width: 1200px) {
+  .projects .projects-all-block .part-right a {
+    width: 60%;
+    margin-top: 105px;
+  }
+}
+@media (max-width: 1000px) {
+  .projects .projects-all-block .part-right a {
+    width: 70%;
+    margin-top: 145px;
+  }
+}
+@media (max-width: 900px) {
+  .projects .projects-all-block .part-right a {
+    width: 75%;
+  }
+}
+@media (max-width: 700px) {
+  .projects .projects-all-block .part-right a {
+    width: 75%;
+  }
+}
+@media (max-width: 600px) {
+  .projects .projects-all-block .part-right a {
+    width: 80%;
+  }
+}
+@media (max-width: 500px) {
+  .projects .projects-all-block .part-right a {
+    width: 85%;
+  }
+}
+@media (max-width: 375px) {
+  .projects .projects-all-block .part-right a {
+    width: 90%;
+  }
 }
 .projects .projects-all-block .part-right a .link-other-page {
   position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-@media (max-width: 1100px) {
-  .projects .projects-all-block .part-right a .link-other-page {
-    width: 68%;
-  }
-}
-@media (max-width: 1000px) {
-  .projects .projects-all-block .part-right a .link-other-page {
-    width: 66%;
-  }
-}
-@media (max-width: 700px) {
-  .projects .projects-all-block .part-right a .link-other-page {
-    width: 66%;
-  }
-}
-@media (max-width: 900px) {
-  .projects .projects-all-block .part-right a .link-other-page {
-    width: 68%;
-  }
-}
-@media (max-width: 600px) {
-  .projects .projects-all-block .part-right a .link-other-page {
-    width: 70%;
-  }
-}
-@media (max-width: 500px) {
-  .projects .projects-all-block .part-right a .link-other-page {
-    width: 72%;
-  }
 }
 .projects .projects-all-block .part-right a .link-other-page:hover {
   background-color: rgba(255, 255, 255, 0.8);
@@ -1186,81 +1175,42 @@ ul li a.active::before {
   color: #6461f2;
   opacity: 0;
 }
-@media (max-width: 1100px) {
-  .projects .projects-all-block .part-right a {
-    width: 80%;
-    padding-left: 120px;
-  }
-}
-@media (max-width: 1000px) {
-  .projects .projects-all-block .part-right a {
-    width: 80%;
-  }
-}
-@media (max-width: 900px) {
-  .projects .projects-all-block .part-right a {
-    width: 100%;
-  }
-}
-@media (max-width: 600px) {
-  .projects .projects-all-block .part-right a {
-    width: 110%;
-    padding-left: 90px;
-  }
-}
-@media (max-width: 500px) {
-  .projects .projects-all-block .part-right a {
-    width: 125%;
-    padding-left: 70px;
-  }
-}
-@media (max-width: 400px) {
-  .projects .projects-all-block .part-right a {
-    width: 130%;
-    padding-left: 55px;
-  }
-}
-@media (max-width: 350px) {
-  .projects .projects-all-block .part-right a {
-    padding-left: 45px;
-  }
-}
 .projects .projects-all-block .part-right a img {
   border: 4px solid #6461f2;
 }
 
 .part-left {
   background-color: rgba(255, 255, 255, 0.2);
-  margin-left: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-bottom: 30px;
-  margin-right: 25px;
+  padding: 200px 0px 200px 0px;
+  margin: 55px;
 }
-@media (max-width: 1100px) {
+@media (max-width: 1200px) {
   .part-left {
-    width: 100%;
-    height: 75%;
-    margin: 0;
+    padding: 220px 0px 50px 0px;
   }
 }
 @media (max-width: 1000px) {
   .part-left {
-    position: relative;
-    top: 70px;
+    padding: 250px 0px 70px 0px;
   }
 }
 @media (max-width: 400px) {
   .part-left {
-    height: 95%;
-    top: 60px;
+    padding: 200px 0px 70px 0px;
+  }
+}
+@media (max-width: 375px) {
+  .part-left {
+    padding: 150px 0px 70px 0px;
   }
 }
 .part-left a {
   text-decoration: none;
-  width: 80%;
+  width: 75%;
   text-align: center;
 }
 @media (max-width: 1100px) {

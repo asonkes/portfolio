@@ -1,8 +1,8 @@
 <!-- PARTIE WEB DESIGN -->
-<div class="projects wrapper">
+<div class="projects wrapper section-parent">
     <h2 class="title-h2">Web Design</h2>
     <div class="projects-all-block wrapper">
-        <div class="part-right">
+        <div class="part-right section">
 
             <?php
             $req = $bdd->query("SELECT * FROM `projects` ORDER BY id ASC LIMIT 0,3");

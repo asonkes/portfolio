@@ -1,0 +1,283 @@
+.projects {
+    max-width: 100%;
+    height: calc(100vh - 40px);
+    background-image: url("images/flux-conception-code-binaire_53876-97406.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    .projects-all-block {
+        width: 100%;
+        height: calc(100% - 176px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+
+        @media(max-width: 1200px) {
+            flex-direction: column;
+        }
+
+        .part-right {
+            width: 100%;
+            height: 70%;
+            position: relative;
+            margin-left: 35px;
+
+            @media(max-width: 1200px) {
+                height: 100%;
+            }
+
+            a {
+                width: 100%;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                position: absolute;
+                margin-right: 80px;
+                transition: all 2s ease-out;
+
+                .link-other-page {
+                    position: absolute;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    &:hover {
+                        background-color: rgba(255, 255, 255, 0.8);
+                        transition: all 0.5s ease-out;
+
+                        .link-other-page-text {
+                            opacity: 1;
+                        }
+                    }
+
+                    .link-other-page-text {
+                        position: absolute;
+                        font-size: 35px;
+                        color: $font-color-mauve;
+                        opacity: 0;
+                    }
+                }
+
+                img {
+                    border: 4px solid $font-color-mauve;
+                }
+            }
+        }
+    }
+}
+
+.part-left {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin-left: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+    margin-right: 25px;
+
+    @media(max-width: $size-dekstop-sml) {
+        width: 100%;
+        height: 75%;
+        margin: 0;
+    }
+
+    @media(max-width: $size-dekstop-sml-sml) {
+        position: relative;
+        top: 70px;
+    }
+
+    @media(max-width: $size-phone) {
+        height: 95%;
+        top: 60px;
+    }
+
+    a {
+        text-decoration: none;
+        width: $width-h4-dekstop-lg;
+        text-align: center;
+
+        @media(max-width: $size-dekstop-sml) {
+            width: $width-h4-dekstop-sml;
+        }
+
+        @media(max-width: $size-tablette-sml) {
+            width: $width-h4-tablette-sml;
+        }
+
+        @media(max-width: $size-phone-lg-md) {
+            width: $width-h4-phone-lg-md;
+        }
+
+        @media(max-width: $size-phone-sml) {
+            width: $width-h4-phone-sml;
+        }
+    }
+}
+
+.projects {
+    max-width: 100%;
+    height: calc(100vh - 40px);
+    background-image: url("images/flux-conception-code-binaire_53876-97406.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    .projects-all-block {
+        width: 100%;
+        height: calc(100% - 176px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+
+        @media(max-width: 1200px) {
+            flex-direction: column;
+        }
+
+        .part-right {
+            width: 100%;
+            height: 70%;
+            position: relative;
+            margin-left: 35px;
+
+            @media(max-width: 1200px) {
+                height: 100%;
+            }
+
+            a {
+                width: 100%;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                position: absolute;
+                margin-right: 80px;
+                transition: all 2s ease-out;
+
+                .link-other-page {
+                    position: absolute;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    &:hover {
+                        background-color: rgba(255, 255, 255, 0.8);
+                        transition: all 0.5s ease-out;
+
+                        .link-other-page-text {
+                            opacity: 1;
+                        }
+                    }
+
+                    .link-other-page-text {
+                        position: absolute;
+                        font-size: 35px;
+                        color: $font-color-mauve;
+                        opacity: 0;
+                    }
+                }
+
+                img {
+                    border: 4px solid $font-color-mauve;
+                }
+            }
+        }
+    }
+}
+
+.part-left {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin-left: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+    margin-right: 25px;
+
+    @media(max-width: $size-dekstop-sml) {
+        width: 100%;
+        height: 75%;
+        margin: 0;
+    }
+
+    @media(max-width: $size-dekstop-sml-sml) {
+        position: relative;
+        top: 70px;
+    }
+
+    @media(max-width: $size-phone) {
+        height: 95%;
+        top: 60px;
+    }
+
+    a {
+        text-decoration: none;
+        width: $width-h4-dekstop-lg;
+        text-align: center;
+
+        @media(max-width: $size-dekstop-sml) {
+            width: $width-h4-dekstop-sml;
+        }
+
+        @media(max-width: $size-tablette-sml) {
+            width: $width-h4-tablette-sml;
+        }
+
+        @media(max-width: $size-phone-lg-md) {
+            width: $width-h4-phone-lg-md;
+        }
+
+        @media(max-width: $size-phone-sml) {
+            width: $width-h4-phone-sml;
+        }
+    }
+}
+
+
+/********************** //////
+
+<!-- PARTIE WEB DESIGN -->
+<div class="projects wrapper">
+    <h2 class="title-h2">Web Design</h2>
+    <div class="projects-all-block wrapper">
+        <div class="part-right">
+
+            <?php
+            $req = $bdd->query("SELECT * FROM `projects` ORDER BY id ASC LIMIT 0,3");
+
+            while ($don = $req->fetch()) {
+                echo '<a class="project-image" href="index.php?action=webDesign' . $don['name'] . ' ">';
+                echo '<div class="link-other-page section">';
+                echo '<p class="link-other-page-text">Découvrez...</p>';
+                echo '</div>';
+                echo '<img class="img-responsive project-image-enfant" src="assets/projects/' . $don['cover'] . '" alt="' . $don['name'] . '">';
+                echo '</a>';
+            }
+            ?>
+        </div>
+
+        <div class="part-left">
+            <?php
+
+            $reqbdd = $bdd->query("SELECT * FROM projects ORDER BY id ASC LIMIT 0,3");
+
+            while ($donbdd = $reqbdd->fetch()) {
+                echo '<a href="#" data-project-name="' . $donbdd['id'] . '">';
+                echo '<h4 class="title-h4">' . $donbdd['name'] . '</h4>';
+                echo '</a>';
+            }
+
+            ?>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>

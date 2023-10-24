@@ -1,79 +1,67 @@
 .projects {
-    max-width: 100%;
-    height: calc(100vh - 40px);
     background-image: url("images/flux-conception-code-binaire_53876-97406.webp");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 
     .projects-all-block {
-        width: 100%;
-        height: calc(100% - 176px);
+        max-width: 100%;
+        min-height: calc(100vh - 176px);
         display: flex;
         justify-content: center;
         align-items: center;
-        overflow: hidden;
 
-        @media(max-width: $size-dekstop-sml) {
+        @media(max-width: $size-dekstop-md-sml) {
             flex-direction: column;
         }
 
         .part-right {
-            width: 100%;
-            height: 70%;
             position: relative;
-            margin-left: 35px;
-
-            @media(max-width: $size-dekstop-sml-sml) {
-                top: $top-projects-partRight-dekstop-sml-sml;
-            }
-
-            @media(max-width: $size-tablette-lg-md) {
-                top: $top-projects-partRight-tablette-lg-md;
-            }
-
-            @media(max-width: $size-tablette-sml) {
-                top: $top-projects-partRight-tablette-sml;
-            }
+            margin: 55px;
 
             a {
-                width: $width-imgProjects-dekstop-lg;
+                width: $width-partRight-projects-dekstop-lg;
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%);
                 position: absolute;
-                margin-right: 80px;
                 transition: all 2s ease-out;
+
+                @media(max-width: $size-dekstop-md-sml) {
+                    width: $width-partRight-projects-dekstop-md-sml;
+                    margin-top: $marginTop-partRight-projects-dekstop-md-sml;
+                }
+
+                @media(max-width: $size-dekstop-sml-sml) {
+                    width: $width-partRight-projects-dekstop-sml-sml;
+                    margin-top: $marginTop-partRight-projects-dekstop-sml-sml;
+                }
+
+                @media(max-width: $size-tablette-lg) {
+                    width: $width-partRight-projects-tablette-lg;
+                }
+
+                @media(max-width: $size-tablette-md) {
+                    width: $width-partRight-projects-tablette-md;
+                }
+
+                @media(max-width: $size-tablette-sml) {
+                    width: $width-partRight-projects-tablette-sml;
+                }
+
+                @media(max-width: $size-phone-lg) {
+                    width: $width-partRight-projects-phone-lg;
+                }
+
+                @media(max-width: $size-phone-md) {
+                    width: $width-partRight-projects-phone-md;
+                }
 
                 .link-other-page {
                     position: absolute;
                     display: flex;
                     justify-content: center;
                     align-items: center;
-
-                    @media(max-width: $size-dekstop-sml) {
-                        width: $width-projects-partRight-linkOtherPage-dekstop-sml;
-                    }
-
-                    @media(max-width: $size-dekstop-sml-sml) {
-                        width: $width-projects-partRight-linkOtherPage-dekstop-sml-sml;
-                    }
-
-                    @media(max-width: $size-tablette-md) {
-                        width: $width-projects-partRight-linkOtherPage-tablette-md;
-                    }
-
-                    @media(max-width: $size-tablette-lg) {
-                        width: $width-projects-partRight-linkOtherPage-tablette-lg;
-                    }
-
-                    @media(max-width: $size-tablette-sml) {
-                        width: $width-projects-partRight-linkOtherPage-tablette-sml;
-                    }
-
-                    @media(max-width: $size-phone-lg) {
-                        width: $width-projects-partRight-linkOtherPage-phone-lg;
-                    }
 
                     &:hover {
                         background-color: rgba(255, 255, 255, 0.8);
@@ -92,38 +80,6 @@
                     }
                 }
 
-                @media(max-width: $size-dekstop-sml) {
-                    width: $width-imgProjects-dekstop-sml;
-                    padding-left: $imgProjects-paddingLeft-dekstop-sml;
-                }
-
-                @media(max-width: $size-dekstop-sml-sml) {
-                    width: $width-imgProjects-dekstop-sml;
-                }
-
-                @media(max-width: $size-tablette-lg) {
-                    width: $width-imgProjects-tablette-lg;
-                }
-
-                @media(max-width: $size-tablette-sml) {
-                    width: $width-imgProjects-tablette-sml;
-                    padding-left: $imgProjects-paddingLeft-tablette-sml;
-                }
-
-                @media(max-width: $size-phone-lg) {
-                    width: $width-imgProjects-phone-lg;
-                    padding-left: $imgProjects-paddingLeft-phone-lg;
-                }
-
-                @media(max-width: $size-phone) {
-                    width: $width-imgProjects-phone;
-                    padding-left: $imgProjects-paddingLeft-phone;
-                }
-
-                @media(max-width: $size-phone-sml) {
-                    padding-left: 45px;
-                }
-
                 img {
                     border: 4px solid $font-color-mauve;
                 }
@@ -134,28 +90,28 @@
 
 .part-left {
     background-color: rgba(255, 255, 255, 0.2);
-    margin-left: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-bottom: 30px;
-    margin-right: 25px;
+    padding: 200px 0px 200px 0px;
+    margin: 55px;
 
-    @media(max-width: $size-dekstop-sml) {
-        width: 100%;
-        height: 75%;
-        margin: 0;
+
+    @media(max-width: $size-dekstop-md-sml) {
+        padding: 220px 0px 50px 0px;
     }
 
     @media(max-width: $size-dekstop-sml-sml) {
-        position: relative;
-        top: 70px;
+        padding: 250px 0px 70px 0px;
     }
 
     @media(max-width: $size-phone) {
-        height: 95%;
-        top: 60px;
+        padding: 200px 0px 70px 0px;
+    }
+
+    @media(max-width: $size-phone-md) {
+        padding: 150px 0px 70px 0px;
     }
 
     a {
