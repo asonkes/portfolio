@@ -81,7 +81,7 @@
         <h2 class="title-h2">Contact</h2>
         <div class="contact-Container-parent wrapper">
             <div class="contact-part-right"></div>
-            <div class="contact-part-left section-enfant">
+            <div class="contact-part-left">
                 <div class="contact-text-parent">
                     <p class="contact-text-enfant">Contactez-moi</p>
                     <p class="contact-text"><span class="contact-text-spanFirst">Nom:</span><span class="contact-text-spanSecond"> Sonkes Audrey</span></p>
