@@ -10,7 +10,9 @@ $menu = [
     "self-conception" => "self-conception.php",
     "webDesignJacadi" => "webDesignJacadi.php",
     "webDesignLollyPop" => "webDesignLollyPop.php",
-    "webDesignVillaSantorini" => "webDesignVillaSantorini.php"
+    "webDesignVillaSantorini" => "webDesignVillaSantorini.php",
+    "50NuancesDeGrey" => "50NuancesDeGrey.php",
+    "LollyPop" => "LollyPop.php",
 ];
 
 //partial header

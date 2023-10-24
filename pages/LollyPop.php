@@ -1,6 +1,6 @@
-<!-- PARTIE WEB DESIGN PROJECT-->
+<!-- PARTIE LOLLY POP PROJET-->
 <div id="webDesignProject">
-    <h2 class="title-h2">Lolly Pop Model</h2>
+    <h2 class="title-h2">Lolly Pop</h2>
     <div class="webDesignProject-all-block wrapper">
 
         <?php
@@ -16,7 +16,7 @@
         ?>
 
         <?php
-        $req = $bdd->query("SELECT * FROM `lollypop`");
+        $req = $bdd->query("SELECT * FROM `projects` WHERE name LIKE 'L%'");
 
         $index = 0; // Initialisez un compteur d'indice
 
@@ -30,12 +30,16 @@
                 echo '<div class="image-position" data-effect="' . $dataEffect . '">';
             }
 
-            echo '<img class="img-responsive project-image" src="assets/lollyPop/' . $don['image'] . '" alt="' . $don['name'] . '">';
+            echo '<img class="img-responsive project-image-enfant" src="assets/projects/' . $don['cover'] . '" alt="' . $don['name'] . '">';
             echo '</div>';
 
             $index++; // Incrémentez l'indice à chaque itération
         }
         ?>
-
+        <div class="button-link-parent">
+            <a class="button-link" href="https://lollypop.audrey-sonkes.be/">
+                <p class="link-site">Découvrez le Site...</p>
+            </a>
+        </div>
     </div>
 </div>
